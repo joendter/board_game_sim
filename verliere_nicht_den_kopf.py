@@ -237,11 +237,11 @@ results = [0]*4
 
 random.seed(42)
 
-a = board(sidelength,playernumber,playerpieces,aiValidMin,aiValidMin,aiValidMin,aiValidMin, debug=True)
+a = board(sidelength,playernumber,playerpieces,aiValidMin,aiZero,aiZero,aiZero, debug=True)
 a.play()
 
 t0 = time()
-for i in range(128):
+for i in range(1280):
     if i % 128 == 0:
         print(i)
         print(results)
